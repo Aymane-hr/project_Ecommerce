@@ -40,7 +40,7 @@ const Navbar = () => {
               <Link className="nav-link" to="/cart">Cart</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/footer">Footer</Link>
+              <Link className="nav-link" to="/about">About</Link>
             </li>
           </ul>
           <div className="d-flex">
