@@ -1,22 +1,20 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { ShopContext } from '../context/ShopContext';
-
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import { ShopContext } from "../context/ShopContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import './Navbar.css';
 
 const Navbar = () => {
   const { cartItems } = useContext(ShopContext);
-
-  if (!cartItems) {
-    console.error("cartItems is undefined. Make sure ShopContext.Provider wraps the component.");
-    return null; 
-  }
-
   const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <Link className="navbar-brand" to="/">E-Shop</Link>
+        <NavLink className="navbar-brand" to="/">
+          E-Shop
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,25 +27,42 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/shop">Shop</Link>
+              <NavLink
+                to="/shop"
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                Shop
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/cart">Cart</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                About
+              </NavLink>
             </li>
           </ul>
-          <div className="d-flex">
-            <Link to="/cart" className="btn btn-outline-primary">
-              Cart <span className="badge bg-primary">{cartItemCount}</span>
-            </Link>
-          </div>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <NavLink
+                to="/cart"
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                <FontAwesomeIcon icon={faCartShopping} style={{color: "#63E6BE",}} /> ({cartItemCount})
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -55,4 +70,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

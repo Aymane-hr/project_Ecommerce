@@ -2,11 +2,12 @@ import React, { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { ShopContext } from '../context/ShopContext';
+import './ProductDetail.css';
 
 const ProductDetail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  const { addToCart } = useContext(ShopContext); // Access addToCart from context
+  const { addToCart } = useContext(ShopContext);
 
   useEffect(() => {
     axios.get(`https://fakestoreapi.com/products/${id}`)
@@ -14,21 +15,21 @@ const ProductDetail = () => {
       .catch(error => console.error(error));
   }, [id]);
 
-  if (!product) return <p>Loading...</p>;
+  if (!product) return <p className="loading-text">Loading...</p>;
 
   return (
-    <div className="container my-4">
-      <div className="row">
-        <div className="col-md-6">
-          <img src={product.image} alt={product.title} className="img-fluid" />
+    <div className="product-detail-container">
+      <div className="product-detail-card">
+        <div className="product-image">
+          <img src={product.image} alt={product.title} />
         </div>
-        <div className="col-md-6">
-          <h2>{product.title}</h2>
-          <p>{product.description}</p>
-          <h4>${product.price}</h4>
+        <div className="product-info">
+          <h2 className="product-title">{product.title}</h2>
+          <p className="product-description">{product.description}</p>
+          <h4 className="product-price">${product.price}</h4>
           <button
-            className="btn btn-primary"
-            onClick={() => addToCart(product)} // Add to cart functionality
+            className="btn add-to-cart-btn"
+            onClick={() => addToCart(product)}
           >
             Add to Cart
           </button>
