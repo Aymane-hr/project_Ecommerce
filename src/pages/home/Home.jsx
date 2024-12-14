@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import ProductCard from '../../components/ProductCard';
 import './Home.css';
@@ -18,7 +19,7 @@ const Home = () => {
         <div className="hero-content">
           <h1>Welcome to E-Shop</h1>
           <p>Your one-stop shop for the latest and greatest products.</p>
-          <a href="/shop" className="btn hero-btn">Shop Now</a>
+          <a className="btn hero-btn"><Link to="/shop" className="text-dark text-decoration-none">Shop Now </Link></a>
         </div>
       </header>
       <div className="featured-section">

@@ -1,0 +1,152 @@
+/* General Container Styling */
+.shop-container {
+    background: linear-gradient(135deg, #f0f4ff, #cbd4e9); /* Gradient background */
+    background-size: cover, contain;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    padding: 20px 0;
+    min-height: 100vh; /* Ensures it fills the screen */
+    position: relative; /* For overlay positioning */
+  }
+  
+  /* Overlay for better readability */
+  .shop-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Light overlay */
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  /* Typography */
+  .shop-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative; /* Above overlay */
+  }
+  
+  .shop-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top {
+    max-height: 200px;
+    object-fit: contain;
+    background: #ffffff;
+    padding: 15px;
+  }
+  
+  .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #434190;
+  }
+  
+  /* Footer Styling */
+  .shop-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 50px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .shop-title {
+      font-size: 28px;
+    }
+  
+    .shop-subtitle {
+      font-size: 16px;
+    }
+  
+    .card-img-top {
+      max-height: 150px;
+    }
+  }
+
+  /* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination-btn {
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination-btn:hover {
+  background-color: #434190;
+  transform: scale(1.05);
+}
+
+.pagination-btn.active {
+  background-color: #2c5282;
+  font-weight: bold;
+}
+
+  
