@@ -1,0 +1,92 @@
+{
+  "orders": [
+    {
+      "id": "337c",
+      "clientInfo": {
+        "name": "Aymane",
+        "address": "Hay riad, fes",
+        "phone": "0651456316"
+      },
+      "cartItems": [
+        {
+          "id": 1,
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "price": 109.95,
+          "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          },
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "title": "Mens Cotton Jacket",
+          "price": 55.99,
+          "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+          "rating": {
+            "rate": 4.7,
+            "count": 500
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 165.94,
+      "orderDate": "2024-12-16T19:38:59.605Z"
+    },
+    {
+      "id": "52f9",
+      "clientInfo": {
+        "name": "202_Aymane_EL_HARCHY",
+        "address": "hay riad",
+        "phone": "0663823091"
+      },
+      "cartItems": [
+        {
+          "id": 7,
+          "title": "White Gold Plated Princess",
+          "price": 9.99,
+          "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+          "rating": {
+            "rate": 3,
+            "count": 400
+          },
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 19.98,
+      "orderDate": "2024-12-16T19:48:57.902Z"
+    },
+    {
+      "id": "b20f",
+      "clientInfo": {
+        "name": "202_Aymane_EL_HARCHY",
+        "address": "fes",
+        "phone": "0663823091"
+      },
+      "cartItems": [
+        {
+          "id": 14,
+          "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+          "price": 999.99,
+          "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+          "category": "electronics",
+          "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+          "rating": {
+            "rate": 2.2,
+            "count": 140
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 999.99,
+      "orderDate": "2024-12-16T19:53:03.360Z"
+    }
+  ]
+}

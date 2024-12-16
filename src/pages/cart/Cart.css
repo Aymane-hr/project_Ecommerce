@@ -69,3 +69,45 @@
     background-color: #218838;
   }
   
+  .cart-container {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cart-total {
+    margin-top: 20px;
+  }
+  
+  .checkout-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-form h2 {
+    margin-bottom: 15px;
+  }
+  
+  .checkout-form .form-label {
+    font-weight: bold;
+  }
+  
+  .checkout-form .btn-primary {
+    background-color: #5a67d8;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .checkout-form .btn-primary:hover {
+    background-color: #434190;
+  }
+  
+  
