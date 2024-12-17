@@ -149,4 +149,24 @@
   font-weight: bold;
 }
 
+.search-bar {
+  text-align: center;
+}
+
+.search-bar input {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.no-products {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  margin-top: 20px;
+}
+
   
