@@ -36,7 +36,8 @@
         }
       ],
       "totalPrice": 165.94,
-      "orderDate": "2024-12-16T19:38:59.605Z"
+      "orderDate": "2024-12-16T19:38:59.605Z",
+      "status": "Completed"
     },
     {
       "id": "52f9",
@@ -61,7 +62,8 @@
         }
       ],
       "totalPrice": 19.98,
-      "orderDate": "2024-12-16T19:48:57.902Z"
+      "orderDate": "2024-12-16T19:48:57.902Z",
+      "status": "In Progress"
     },
     {
       "id": "b20f",
@@ -86,7 +88,59 @@
         }
       ],
       "totalPrice": 999.99,
-      "orderDate": "2024-12-16T19:53:03.360Z"
+      "orderDate": "2024-12-16T19:53:03.360Z",
+      "status": "Completed"
+    },
+    {
+      "id": "6420",
+      "clientInfo": {
+        "name": "ccc test",
+        "address": "Hay riad, fes",
+        "phone": "0651456316"
+      },
+      "cartItems": [
+        {
+          "id": 6,
+          "title": "Solid Gold Petite Micropave ",
+          "price": 168,
+          "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+          "rating": {
+            "rate": 3.9,
+            "count": 70
+          },
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 336,
+      "orderDate": "2024-12-22T10:40:42.841Z"
+    },
+    {
+      "id": "9837",
+      "clientInfo": {
+        "name": "hajar",
+        "address": "Hay riad, fes",
+        "phone": "0651456316"
+      },
+      "cartItems": [
+        {
+          "id": 3,
+          "title": "Mens Cotton Jacket",
+          "price": 55.99,
+          "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+          "rating": {
+            "rate": 4.7,
+            "count": 500
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 55.99,
+      "orderDate": "2024-12-22T11:32:44.689Z",
+      "status": "In Progress"
     }
   ]
 }

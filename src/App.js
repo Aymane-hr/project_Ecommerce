@@ -8,6 +8,10 @@ import ProductDetails from './pages/productdetail/ProductDetail';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer'
 
+import AdminDashboard from "./admin/AdminDashboard";
+import ManageProducts from "./admin/ManageProducts";
+import ManageOrders from "./admin/ManageOrders";
+
 const App = () => {
   return (
     <>
@@ -18,6 +22,11 @@ const App = () => {
         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<About />} />
+
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/admin/products" element={<ManageProducts />} />
+        <Route path="/admin/orders" element={<ManageOrders />} />
+        
       </Routes>
       <Footer/>
     </>

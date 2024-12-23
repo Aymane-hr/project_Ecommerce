@@ -1,0 +1,87 @@
+/* AdminDashboard.css */
+
+.admin-container {
+  display: flex;
+  height: 100vh; /* Ensures the sidebar spans the full height */
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  height: 100%;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.admin-dashboard {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; /* Enables scrolling for the dashboard content */
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background: #3388fe;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Dropdown styling */
+.form-select-sm {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+/* Status-specific colors */
+.status-pending {
+  background-color: #ffc107; /* Yellow */
+}
+
+.status-in-progress {
+  background-color: #17a2b8; /* Blue */
+}
+
+.status-completed {
+  background-color: #28a745; /* Green */
+}
+

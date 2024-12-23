@@ -32,7 +32,7 @@ const Cart = () => {
     };
 
     try {
-      await axios.post("http://localhost:3050/orders", orderData);
+      await axios.post("http://localhost:5000/orders", orderData);
       alert("Order placed successfully!");
       navigate("/shop");
     } catch (error) {
