@@ -92,31 +92,6 @@
       "status": "Completed"
     },
     {
-      "id": "6420",
-      "clientInfo": {
-        "name": "ccc test",
-        "address": "Hay riad, fes",
-        "phone": "0651456316"
-      },
-      "cartItems": [
-        {
-          "id": 6,
-          "title": "Solid Gold Petite Micropave ",
-          "price": 168,
-          "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-          "category": "jewelery",
-          "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-          "rating": {
-            "rate": 3.9,
-            "count": 70
-          },
-          "quantity": 2
-        }
-      ],
-      "totalPrice": 336,
-      "orderDate": "2024-12-22T10:40:42.841Z"
-    },
-    {
       "id": "9837",
       "clientInfo": {
         "name": "hajar",
@@ -140,7 +115,7 @@
       ],
       "totalPrice": 55.99,
       "orderDate": "2024-12-22T11:32:44.689Z",
-      "status": "In Progress"
+      "status": "Pending"
     }
   ]
 }

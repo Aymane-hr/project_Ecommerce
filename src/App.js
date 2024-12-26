@@ -9,6 +9,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer'
 
 import AdminDashboard from "./admin/AdminDashboard";
+import ClientDetails from "./admin/ClientDetails";
 import ManageProducts from "./admin/ManageProducts";
 import ManageOrders from "./admin/ManageOrders";
 
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
 
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/client-details/:orderId" element={<ClientDetails />} />
         <Route path="/admin/products" element={<ManageProducts />} />
         <Route path="/admin/orders" element={<ManageOrders />} />
         

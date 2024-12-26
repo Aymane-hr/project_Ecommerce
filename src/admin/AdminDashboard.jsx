@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Sidebar from "../components/Sidebar";
 import "./AdminDashboard.css";
@@ -6,6 +7,7 @@ import "./AdminDashboard.css";
 const AdminDashboard = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -20,6 +22,10 @@ const AdminDashboard = () => {
       });
   }, []);
 
+  const handleClientDetails = (orderId) => {
+    navigate(`/client-details/${orderId}`);
+  };
+
   const handleStatusChange = (id, newStatus) => {
     axios
       .patch(`http://localhost:5000/orders/${id}`, { status: newStatus })
@@ -31,18 +37,6 @@ const AdminDashboard = () => {
         );
       })
       .catch((error) => console.error("Error updating status:", error));
-  };
-
-  const handleDelete = (id) => {
-    if (window.confirm("Are you sure you want to delete this order?")) {
-      axios
-        .delete(`http://localhost:5000/orders/${id}`)
-        .then(() => {
-          alert("Order deleted successfully!");
-          setOrders((prevOrders) => prevOrders.filter((order) => order.id !== id));
-        })
-        .catch((error) => console.error("Error deleting order:", error));
-    }
   };
 
   return (
@@ -83,31 +77,30 @@ const AdminDashboard = () => {
                     <select
                       value={order.status}
                       onChange={(e) => handleStatusChange(order.id, e.target.value)}
-                      className={`form-select form-select-sm ${order.status === "Pending"
+                      className={`form-select form-select-sm ${
+                        order.status === "Pending"
                           ? "status-pending"
                           : order.status === "In Progress"
-                            ? "status-in-progress"
-                            : "status-completed"
-                        }`}
+                          ? "status-in-progress"
+                          : "status-completed"
+                      }`}
                     >
                       <option value="Pending">Pending</option>
                       <option value="In Progress">In Progress</option>
                       <option value="Completed">Completed</option>
                     </select>
                   </td>
-
                   <td>
                     <button
-                      className="btn btn-danger btn-sm"
-                      onClick={() => handleDelete(order.id)}
+                      className="btn btn-primary btn-sm"
+                      onClick={() => handleClientDetails(order.id)}
                     >
-                      Delete
+                      View Details
                     </button>
                   </td>
                 </tr>
               ))}
             </tbody>
-
           </table>
         )}
       </div>
