@@ -37,7 +37,7 @@
       ],
       "totalPrice": 165.94,
       "orderDate": "2024-12-16T19:38:59.605Z",
-      "status": "Completed"
+      "status": "Pending"
     },
     {
       "id": "52f9",
@@ -63,7 +63,7 @@
       ],
       "totalPrice": 19.98,
       "orderDate": "2024-12-16T19:48:57.902Z",
-      "status": "In Progress"
+      "status": "Completed"
     },
     {
       "id": "b20f",
@@ -89,7 +89,7 @@
       ],
       "totalPrice": 999.99,
       "orderDate": "2024-12-16T19:53:03.360Z",
-      "status": "Completed"
+      "status": "In Progress"
     },
     {
       "id": "9837",
@@ -116,6 +116,18 @@
       "totalPrice": 55.99,
       "orderDate": "2024-12-22T11:32:44.689Z",
       "status": "Pending"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "password"
     }
   ]
 }

@@ -8,7 +8,10 @@ import ProductDetails from './pages/productdetail/ProductDetail';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer'
 
-import AdminDashboard from "./admin/AdminDashboard";
+import { AuthProvider } from "./context/AuthContext";
+import Login from "./admin/Login";
+import AdminDashboard from "./admin/AdminDashboard"; // Updated path
+import ProtectedRoute from "./components/ProtectedRoute";
 import ClientDetails from "./admin/ClientDetails";
 import ManageProducts from "./admin/ManageProducts";
 import ManageOrders from "./admin/ManageOrders";
@@ -16,7 +19,8 @@ import ManageOrders from "./admin/ManageOrders";
 const App = () => {
   return (
     <>
-      <Navbar />
+    <AuthProvider>
+    <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
@@ -24,13 +28,23 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<About />} />
 
-        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+            path="/admin"
+            element={
+              <ProtectedRoute>
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          />
         <Route path="/client-details/:orderId" element={<ClientDetails />} />
         <Route path="/admin/products" element={<ManageProducts />} />
         <Route path="/admin/orders" element={<ManageOrders />} />
         
       </Routes>
       <Footer/>
+    </AuthProvider>
+      
     </>
   );
 };
