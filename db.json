@@ -37,7 +37,7 @@
       ],
       "totalPrice": 165.94,
       "orderDate": "2024-12-16T19:38:59.605Z",
-      "status": "Pending"
+      "status": "In Progress"
     },
     {
       "id": "52f9",
@@ -116,16 +116,68 @@
       "totalPrice": 55.99,
       "orderDate": "2024-12-22T11:32:44.689Z",
       "status": "Pending"
+    },
+    {
+      "id": "59b8",
+      "clientInfo": {
+        "name": "hajar",
+        "address": "Hay riad, fes",
+        "phone": "0651456316"
+      },
+      "cartItems": [
+        {
+          "id": 3,
+          "title": "Mens Cotton Jacket",
+          "price": 55.99,
+          "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+          "rating": {
+            "rate": 4.7,
+            "count": 500
+          },
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 111.98,
+      "orderDate": "2025-01-08T20:14:09.514Z",
+      "status": "Pending"
+    },
+    {
+      "id": "508d",
+      "clientInfo": {
+        "name": "Aymane",
+        "address": "Hay riad, fes",
+        "phone": "0651456316"
+      },
+      "cartItems": [
+        {
+          "id": 7,
+          "title": "White Gold Plated Princess",
+          "price": 9.99,
+          "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+          "rating": {
+            "rate": 3,
+            "count": 400
+          },
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9.99,
+      "orderDate": "2025-01-08T20:15:41.905Z",
+      "status": "Completed"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "12345"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "user",
       "password": "password"
     }
