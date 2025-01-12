@@ -15,6 +15,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import ClientDetails from "./admin/ClientDetails";
 import ManageProducts from "./admin/ManageProducts";
 import ManageOrders from "./admin/ManageOrders";
+import Count from './context/Count';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
     <AuthProvider>
     <Navbar />
       <Routes>
+        <Route path="/count" element={<Count />} />
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/product/:id" element={<ProductDetails />} />
